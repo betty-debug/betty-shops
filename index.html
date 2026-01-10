@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betty's Handmade Designs</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #f8d7da;
+            --dark-accent: #5a4a42;
+            --text-color: #333;
+            --bg-light: #fdfbfb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+        }
+
+        header {
+            background-color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo-placeholder {
+            width: 100px;
+            height: 100px;
+            background: var(--primary-pink);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--dark-accent);
+        }
+
+        h1 { margin: 0; color: var(--dark-accent); font-size: 2.5rem; }
+        p.subtitle { font-style: italic; color: #777; }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        /* Shop Selection Section */
+        .shop-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .card h2 { color: var(--dark-accent); margin: 1.5rem 0 0.5rem; }
+        .card p { padding: 0 1.5rem; font-size: 0.95rem; min-height: 60px;}
+
+        .btn {
+            display: inline-block;
+            background-color: var(--dark-accent);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #000;
+        }
+
+        .btn-etsy {
+            background-color: #eb6d20; /* Etsy Orange */
+        }
+
+        /* Gallery/Featured Section */
+        .featured {
+            margin-top: 5rem;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 2rem;
+        }
+
+        .grid-item {
+            aspect-ratio: 1 / 1;
+            background: #e9e9e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #bbb;
+        }
+
+        footer {
+            background: var(--dark-accent);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-top: 5rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-placeholder">BETTY</div>
+        <h1>Betty's Creative Studio</h1>
+        <p class="subtitle">Handmade Patterns & Exquisite Doll Fashion</p>
+    </header>
+
+    <div class="container">
+        <div class="shop-cards">
+            <div class="card">
+                <div class="image-placeholder">
+                    [ Placeholder: Pattern Preview Image ]
+                </div>
+                <h2>Betty's Pattern Haus</h2>
+                <p>Digital sewing patterns for your next creative project. Easy to follow, professional designs.</p>
+                <a href="https://bettyspatternhaus.etsy.com" target="_blank" class="btn btn-etsy">
+                    <i class="fab fa-etsy"></i> Shop Patterns
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="image-placeholder">
+                    [ Placeholder: Doll Outfit Image ]
+                </div>
+                <h2>Doll Couture by Betty</h2>
+                <p>High-quality, handcrafted clothing and accessories for your favorite dolls.</p>
+                <a href="https://dollcouturebybetty.etsy.com" target="_blank" class="btn btn-etsy">
+                    <i class="fab fa-etsy"></i> Shop Couture
+                </a>
+            </div>
+        </div>
+
+        <section class="featured">
+            <h3>Featured Designs</h3>
+            <div class="grid">
+                <div class="grid-item">Image</div>
+                <div class="grid-item">Image</div>
+                <div class="grid-item">Image</div>
+                <div class="grid-item">Image</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Betty's Creative Studio</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;">Check out my shops on Etsy for unique handmade items.</p>
+    </footer>
+
+</body>
+</html>
