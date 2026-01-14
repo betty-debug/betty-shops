@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="YMyAXb4RukB6jtDNSq-jL1mAkVlN4X8ifBbsqqQd7dA" />
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="YMyAXb4RukB6jtDNSq-jL1mAkVlN4X8ifBbsqqQd7dA">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betty's Handmade Designs</title>
+
     <link rel="icon" href="/bph_favicon.png" type="image/png">
     <meta name="description" content="Discover all of Betty’s Etsy shops in one place. Explore handmade bag patterns, doll couture, and curated creative collections.">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <style>
         :root {
             --primary-pink: #f8d7da;
@@ -31,19 +34,21 @@
             text-align: center;
             border-bottom: 1px solid #eee;
         }
-        
-       .logo-placeholder {
-    background: none;
-    border-radius: 0;
-    width: auto;
-    height: auto;
-}
-.logo-placeholder img {
-    height: 40px;
-}
 
-        h1 { margin: 0; color: var(--dark-accent); font-size: 2.5rem; }
-        p.subtitle { font-style: italic; color: #777; }
+        .logo-placeholder img {
+            height: 40px;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--dark-accent);
+            font-size: 2.5rem;
+        }
+
+        p.subtitle {
+            font-style: italic;
+            color: #777;
+        }
 
         .container {
             max-width: 1000px;
@@ -51,7 +56,7 @@
             padding: 0 20px;
         }
 
-        /* Shop Selection Section */
+        /* Shop Cards */
         .shop-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -73,19 +78,22 @@
             transform: translateY(-10px);
         }
 
-        .image-placeholder {
+        .card img {
             width: 100%;
             height: 200px;
-            background-color: #eee;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 0.9rem;
+            object-fit: cover;
         }
 
-        .card h2 { color: var(--dark-accent); margin: 1.5rem 0 0.5rem; }
-        .card p { padding: 0 1.5rem; font-size: 0.95rem; min-height: 60px;}
+        .card h2 {
+            color: var(--dark-accent);
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .card p {
+            padding: 0 1.5rem;
+            font-size: 0.95rem;
+            min-height: 60px;
+        }
 
         .btn {
             display: inline-block;
@@ -103,10 +111,10 @@
         }
 
         .btn-etsy {
-            background-color: #eb6d20; /* Etsy Orange */
+            background-color: #eb6d20;
         }
 
-        /* Gallery/Featured Section */
+        /* Featured Section */
         .featured {
             margin-top: 5rem;
             text-align: center;
@@ -119,13 +127,10 @@
             margin-top: 2rem;
         }
 
-        .grid-item {
-            aspect-ratio: 1 / 1;
-            background: #e9e9e9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #bbb;
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         footer {
@@ -144,73 +149,76 @@
         }
 
         @media (max-width: 768px) {
-            .grid { grid-template-columns: repeat(2, 1fr); }
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo-placeholder"><img src="youtube_logo.png" alt="Betty's YouTube Logo">
-</div>
-        <h1>Betty's Etsy Shop Hub</h1>
-        <p class="subtitle">Curated links to my Etsy shops</p>
-    </header>
+<header>
+    <div class="logo-placeholder">
+        <img src="youtube_logo.png" alt="Betty's YouTube Logo">
+    </div>
+    <h1>Betty's Etsy Shop Hub</h1>
+    <p class="subtitle">Curated links to my Etsy shops</p>
+</header>
 
-    <div class="container">
-        <div class="shop-cards">
-            <div class="card">
-                <img src="bettys_pattern_haus_logo.png" alt="Betty's Pattern Haus Logo" style="width:100%; height:200px; object-fit:cover;">
-                    Draft - Sew - Create
-                </div>
-               <h2>Hand-Made Bags and Patterns</h2>
+<div class="container">
+    <div class="shop-cards">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="bettys_pattern_haus_logo.png" alt="Betty's Pattern Haus Logo">
+            <h2>Hand-Made Bags and Patterns</h2>
             <p>Digital sewing patterns for your next creative project. Easy to follow, professional designs.</p>
-                <a href="https://bettyspatternhaus.etsy.com" target="_blank" class="btn btn-etsy">
-                    <i class="fab fa-etsy"></i> Shop Bag Patterns
-                </a>
-            </div>
-        </div>
-    <div class="container">
-        <div class="shop-cards">
-            <div class="card">
-               <img src="doll_couture_by_betty.png" alt="Betty's Doll couture Logo" style="width:100%; height:200px; object-fit:cover;">
-                    Dress - Your - Dolls
-                
-                <h2>Hand-Made Doll Outfits and Patterns </h2>
-                <p>High-quality, handcrafted patterns and clothing for your favorite dolls.</p>
-                <a href="https://dollcouturebybetty.etsy.com" target="_blank" class="btn btn-etsy">
-    </div>
-                    <i class="fab fa-etsy"></i> Shop Doll Patterns
-                </a>
-            </div>
+            <a href="https://bettyspatternhaus.etsy.com" target="_blank" rel="noopener noreferrer" class="btn btn-etsy">
+                <i class="fab fa-etsy"></i> Shop Bag Patterns
+            </a>
         </div>
 
-        <section class="featured">
-            <h3>Featured Designs</h3>
-            <div class="grid">
-    <div class="grid-item"><img src="pebble_bag_neutral.png" style="width:100%; height:100%; object-fit:cover;"></div>
-    <div class="grid-item"><img src="Mini_Travel_sling_bag.jpg" style="width:100%; height:100%; object-fit:cover;"></div>
-    <div class="grid-item"><img src="Suit_Pattern.png" style="width:100%; height:100%; object-fit:cover;"></div>
-    <div class="grid-item"><img src="gown_pattern.png" style="width:100%; height:100%; object-fit:cover;"></div>
-</div>
-        </section>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="doll_couture_by_betty.png" alt="Betty's Doll Couture Logo">
+            <h2>Hand-Made Doll Outfits and Patterns</h2>
+            <p>High-quality, handcrafted patterns and clothing for your favorite dolls.</p>
+            <a href="https://dollcouturebybetty.etsy.com" target="_blank" rel="noopener noreferrer" class="btn btn-etsy">
+                <i class="fab fa-etsy"></i> Shop Doll Patterns
+            </a>
+        </div>
+
     </div>
 
-    <footer>
-        <p>&copy; 2023 Betty's Creative Studio</p>
-        <div class="social-links">
-    <a href="https://instagram.com/cookies_sewing" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://facebook.com/yourpagename" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://pin.it/4lyErb8HD" target="_blank"><i class="fab fa-instagram"></i></a>
+    <!-- Featured Section -->
+    <section class="featured">
+        <h3>Featured Designs</h3>
+        <div class="grid">
+            <div class="grid-item"><img src="pebble_bag_neutral.png" alt="Pebble Bag"></div>
+            <div class="grid-item"><img src="Mini_Travel_sling_bag.jpg" alt="Mini Travel Sling Bag"></div>
+            <div class="grid-item"><img src="Suit_Pattern.png" alt="Suit Pattern"></div>
+            <div class="grid-item"><img src="gown_pattern.png" alt="Gown Pattern"></div>
+        </div>
+    </section>
 </div>
-        <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;">Check out my shops on Etsy for unique handmade items.</p>
-    </footer>
+
+<footer>
+    <p>&copy; 2023 Betty's Creative Studio</p>
+
+    <div class="social-links">
+        <a href="https://instagram.com/cookies_sewing" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/yourpagename" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+        <a href="https://pin.it/4lyErb8HD" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+    </div>
+
+    <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;">
+        Check out my shops on Etsy for unique handmade items.
+    </p>
+</footer>
 
 </body>
-
 </html>
-
-
 
 
 
